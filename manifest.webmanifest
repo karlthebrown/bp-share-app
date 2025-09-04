@@ -1,1 +1,27 @@
-{"name": "BP Share", "short_name": "BP Share", "start_url": ".", "display": "standalone", "background_color": "#1E88E5", "theme_color": "#1E88E5", "icons": [{"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png"}]}
+{
+  "name": "BP Share",
+  "short_name": "BP Share",
+  "description": "A medical-themed PWA to record blood pressure readings, export weekly PDFs, and share updates via WhatsApp.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "en",
+  "background_color": "#1E88E5",
+  "theme_color": "#1E88E5",
+  "categories": ["health", "medical", "productivity"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
