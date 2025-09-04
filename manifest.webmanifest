@@ -23,5 +23,35 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
+  ],
+  "shortcuts": [
+    {
+      "name": "Add Reading",
+      "short_name": "Add",
+      "description": "Quickly add a new BP reading",
+      "url": "/?action=add-reading",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Preview Message",
+      "short_name": "Preview",
+      "description": "Preview the WhatsApp message",
+      "url": "/?action=preview",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Export to PDF",
+      "short_name": "Export",
+      "description": "Export a weekly PDF summary",
+      "url": "/?action=export",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Share via WhatsApp",
+      "short_name": "Share",
+      "description": "Open WhatsApp share with the current summary",
+      "url": "/?action=share",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
   ]
 }
