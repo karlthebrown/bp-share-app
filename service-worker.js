@@ -1,5 +1,5 @@
 // bump the version when you change files, so users get updates immediately
-const CACHE_NAME = 'bp-share-medical-v8';
+const CACHE_NAME = 'bp-share-medical-v9';
 const ASSETS = [
   './',
   './index.html',
