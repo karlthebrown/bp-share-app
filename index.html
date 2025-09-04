@@ -477,6 +477,40 @@
         navigator.serviceWorker.register('./service-worker.js');
       });
     }
+<script>
+  // Handle PWA app shortcuts like ?action=add-reading|preview|export|share
+  (function () {
+    const params = new URLSearchParams(location.search);
+    const action = (params.get('action') || '').toLowerCase();
+
+    const run = () => {
+      switch (action) {
+        case 'add-reading':
+          // add two empty rows by default (AM/PM)
+          addRow({ meridiem: 'AM' });
+          addRow({ meridiem: 'PM' });
+          break;
+        case 'preview':
+          doPreview();
+          break;
+        case 'export':
+          doExportPDF();
+          break;
+        case 'share':
+          doShare();
+          break;
+        default:
+          // no-op
+          break;
+      }
+    };
+// Run after the page finishes laying out
+    if (document.readyState === 'complete') {
+      setTimeout(run, 150);
+    } else {
+      window.addEventListener('load', () => setTimeout(run, 150));
+    }
+  })();
   </script>
 </body>
 </html>
